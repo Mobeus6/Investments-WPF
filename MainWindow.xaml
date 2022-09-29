@@ -34,52 +34,59 @@
                             </LinearGradientBrush>
                         </Border.Background>
                         
-                        <TextBlock Text="JP" Foreground="#ffffff" FontSize="22" FontWeight="SemiBold"
+                        <TextBlock Text="II" Foreground="#ffffff" FontSize="22" FontWeight="SemiBold"
                         TextAlignment="Center" VerticalAlignment="Center" Margin="3 0 0 2"/>
                     </Border>
                     <StackPanel Margin="10 0 0 0" VerticalAlignment="Center">
-                        <TextBlock Text="Jonathan Perman" FontSize="15" Margin="0 0 0 5" Foreground="#c2cfff"/>
+                        <TextBlock Text="Ivan Ilchenko" FontSize="15" Margin="0 0 0 5" Foreground="#c2cfff"/>
                         <TextBlock Text="Beta 1.1" FontSize="11" Margin="0 0 0 5" Foreground="#7788bf"/>
                     </StackPanel>
                 </StackPanel>
                 <Separator Height="0.8" Margin="20 30" Background="#46658a" />
+                
                 <!--Menu Buttons-->
                 <Button Style="{StaticResource menuButtonActive}">
                     <StackPanel Orientation="Horizontal">
                         <fa:IconImage Icon="Home" Style="{StaticResource menuButtonIcon}"/>
                         <TextBlock Text="Home Page" Style="{StaticResource menuButtonText}"/>
-
                     </StackPanel>
                 </Button>
                 <Button Style="{StaticResource menuButton}">
                     <StackPanel Orientation="Horizontal">
                         <fa:IconImage Icon="Wallet" Style="{StaticResource menuButtonIcon}"/>
                         <TextBlock Text="Add Transaction" Style="{StaticResource menuButtonText}"/>
-
+                    </StackPanel>
+                </Button>
+                <Button Style="{StaticResource menuButton}">
+                    <StackPanel Orientation="Horizontal">
+                        <fa:IconImage Icon="ChartArea" Style="{StaticResource menuButtonIcon}"/>
+                        <TextBlock Text="Investment" Style="{StaticResource menuButtonText}"/>
+                    </StackPanel>
+                </Button>
+                <Button Style="{StaticResource menuButton}">
+                    <StackPanel Orientation="Horizontal">
+                        <fa:IconImage Icon="MoneyBill1" Style="{StaticResource menuButtonIcon}"/>
+                        <TextBlock Text="Expenses" Style="{StaticResource menuButtonText}"/>
                     </StackPanel>
                 </Button>
                 <Button Style="{StaticResource menuButton}">
                     <StackPanel Orientation="Horizontal">
                         <fa:IconImage Icon="Bank" Style="{StaticResource menuButtonIcon}"/>
-                        <TextBlock Text="Show Investments" Style="{StaticResource menuButtonText}"/>
-
+                        <TextBlock Text="Capital Statement" Style="{StaticResource menuButtonText}"/>
                     </StackPanel>
                 </Button>
                 <Button Style="{StaticResource menuButton}">
                     <StackPanel Orientation="Horizontal">
-                        <fa:IconImage Icon="Home" Style="{StaticResource menuButtonIcon}"/>
-                        <TextBlock Text="Add Transaction" Style="{StaticResource menuButtonText}"/>
-
+                        <fa:IconImage Icon="Gear" Style="{StaticResource menuButtonIcon}"/>
+                        <TextBlock Text="Settings" Style="{StaticResource menuButtonText}"/>
                     </StackPanel>
                 </Button>
                 <Button Style="{StaticResource menuButton}">
                     <StackPanel Orientation="Horizontal">
-                        <fa:IconImage Icon="Home" Style="{StaticResource menuButtonIcon}"/>
-                        <TextBlock Text="Add Transaction" Style="{StaticResource menuButtonText}"/>
-
+                        <fa:IconImage Icon="PowerOff" Style="{StaticResource menuButtonIcon}"/>
+                        <TextBlock Text="Logout" Style="{StaticResource menuButtonText}"/>
                     </StackPanel>
                 </Button>
-
             </StackPanel>
         </Border>
             
@@ -91,8 +98,35 @@
                     <GradientStop Color="#2c386c" Offset="1"/>
                 </LinearGradientBrush>
             </Border.Background>
-            <TextBlock Text="JP" Foreground="#ffffff" FontSize="22" FontWeight="SemiBold"
-                        TextAlignment="Center" VerticalAlignment="Center" Margin="3 0 0 2"/>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                
+                <!--Top Menu-->
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0 0 30 20">
+                    <Button Content="Today" Style="{StaticResource topMenuButton}"/>
+                    <Button Content="Week" Style="{StaticResource topMenuButton}" Background="#5b60c4" Foreground="#ffffff"/>
+                    <Button Content="Month" Style="{StaticResource topMenuButton}"/>
+                    <Button Content="Year" Style="{StaticResource topMenuButton}"/>
+                </StackPanel>
+                
+                <!--Title-->
+                <TextBlock Text="Good afternoon, Ivan" FontSize="26" Foreground="#ccd7ff" HorizontalAlignment="Left" Margin="50 30 0 20"/>
+                
+                <!--Info Card-->
+                <Grid Grid.Row="1" Margin="50 20 15 40">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                </Grid>
+                
+            </Grid>
         </Border>
     </Grid>
 </Window>
