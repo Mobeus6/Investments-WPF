@@ -43,3 +43,6 @@ D:\Development\IT\C#\Homeworks\WPFInvestment\obj\Debug\WPFInvestment.csproj.Core
 D:\Development\IT\C#\Homeworks\WPFInvestment\obj\Debug\WPFInvestment.csproj.CopyComplete
 D:\Development\IT\C#\Homeworks\WPFInvestment\obj\Debug\WPFInvestment.exe
 D:\Development\IT\C#\Homeworks\WPFInvestment\obj\Debug\WPFInvestment.pdb
+D:\Development\IT\C#\Homeworks\WPFInvestment\obj\Debug\User Controls\InfoCard.g.cs
+D:\Development\IT\C#\Homeworks\WPFInvestment\obj\Debug\User Controls\InfoCard.baml
+D:\Development\IT\C#\Homeworks\WPFInvestment\obj\Debug\GeneratedInternalTypeHelper.g.cs

@@ -32,10 +32,5 @@ namespace WPFInvestment
                 this.DragMove();
             }
         }
-
-        private void Border_MouseDown_1(object sender, MouseButtonEventArgs e)
-        {
-
-        }
     }
 }

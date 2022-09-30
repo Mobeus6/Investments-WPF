@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:WPFInvestment"  
+        xmlns:uc="clr-namespace:WPFInvestment.User_Controls"
         xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
         MinWidth="300"
         MinHeight="600"
@@ -55,6 +55,12 @@
                     <StackPanel Orientation="Horizontal">
                         <fa:IconImage Icon="Wallet" Style="{StaticResource menuButtonIcon}"/>
                         <TextBlock Text="Add Transaction" Style="{StaticResource menuButtonText}"/>
+                    </StackPanel>
+                </Button>
+                <Button Style="{StaticResource menuButton}">
+                    <StackPanel Orientation="Horizontal">
+                        <fa:IconImage Icon="Remove" Style="{StaticResource menuButtonIcon}"/>
+                        <TextBlock Text="Delete Transaction" Style="{StaticResource menuButtonText}"/>
                     </StackPanel>
                 </Button>
                 <Button Style="{StaticResource menuButton}">
@@ -124,6 +130,15 @@
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
+
+
+                    <uc:InfoCard Grid.Column="0" Title="Summary" Number="564,945" Icon="Bank" Background="#827bff" Background2="#d9b5ff"
+                                 EllipseBackground1="#b298fd" EllipseBackgtound2="#e4bbff"/>
+                    <uc:InfoCard Grid.Column="1" Title="Income" Number="564,945" Icon="MoneyBill" Background="#fd8a87" Background2="#fdb58a"
+                                 EllipseBackground1="#fc84cb" EllipseBackgtound2="#fc8fae"/>
+                    <uc:InfoCard Grid.Column="2" Title="Expenses" Number="564,945" Icon="Bank" Background="#827bff" Background2="#d9b5ff"
+                                 EllipseBackground1="#b298fd" EllipseBackgtound2="#e4bbff"/>
+
                 </Grid>
                 
             </Grid>
