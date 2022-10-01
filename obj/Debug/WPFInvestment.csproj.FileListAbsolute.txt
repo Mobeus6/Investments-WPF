@@ -46,3 +46,11 @@ D:\Development\IT\C#\Homeworks\WPFInvestment\obj\Debug\WPFInvestment.pdb
 D:\Development\IT\C#\Homeworks\WPFInvestment\obj\Debug\User Controls\InfoCard.g.cs
 D:\Development\IT\C#\Homeworks\WPFInvestment\obj\Debug\User Controls\InfoCard.baml
 D:\Development\IT\C#\Homeworks\WPFInvestment\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Development\IT\C#\Homeworks\WPFInvestment\obj\Debug\User Controls\Profit.baml
+D:\Development\IT\C#\Homeworks\WPFInvestment\obj\Debug\User Controls\Profit.g.cs
+D:\Development\IT\C#\Homeworks\WPFInvestment\bin\Debug\LiveCharts.dll
+D:\Development\IT\C#\Homeworks\WPFInvestment\bin\Debug\LiveCharts.Wpf.dll
+D:\Development\IT\C#\Homeworks\WPFInvestment\bin\Debug\LiveCharts.pdb
+D:\Development\IT\C#\Homeworks\WPFInvestment\bin\Debug\LiveCharts.xml
+D:\Development\IT\C#\Homeworks\WPFInvestment\bin\Debug\LiveCharts.Wpf.pdb
+D:\Development\IT\C#\Homeworks\WPFInvestment\bin\Debug\LiveCharts.Wpf.xml

@@ -1,24 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿ using System.Windows.Media;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace WPFInvestment.User_Controls
 {
     /// <summary>
     /// Interaction logic for info.xaml
     /// </summary>
-    public partial class InfoCard : Page
+    public partial class InfoCard : UserControl
     {
         public InfoCard()
         {
@@ -26,8 +15,8 @@ namespace WPFInvestment.User_Controls
         }
         public string Title
         {
-            get { return (string)GetValue(TitleProperty); } 
-            set { SetValue(TitleProperty, value); } 
+            get { return (string)GetValue(TitleProperty); }
+            set { SetValue(TitleProperty, value); }
         }
 
         public static readonly DependencyProperty TitleProperty = DependencyProperty.Register("Title", typeof(string), typeof(InfoCard));
@@ -46,8 +35,8 @@ namespace WPFInvestment.User_Controls
             set { SetValue(IconProperty, value); }
         }
 
-        public static readonly DependencyProperty IconProperty = DependencyProperty.Register("Icon", 
-            typeof(FontAwesome.Sharp.IconChar), 
+        public static readonly DependencyProperty IconProperty = DependencyProperty.Register("Icon",
+            typeof(FontAwesome.Sharp.IconChar),
             typeof(InfoCard));
 
         public Color Background1
