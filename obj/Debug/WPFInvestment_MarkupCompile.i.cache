@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\Development\IT\C#\Homeworks\WPFInvestment\App.xaml
-3137125883
+6545679622
 
-8575535629
+12-1373357360
 322066635946
-MainWindow.xaml;User Controls\InfoCard.xaml;User Controls\Profit.xaml;
+MainWindow.xaml;Pages\DeleteTransactionPage.xaml;Pages\HomePage.xaml;Pages\TransactionPage.xaml;User Controls\InfoCard.xaml;User Controls\Profit.xaml;
 
 True
 

@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WPFInvestment.Pages;
 
 namespace WPFInvestment
 {
@@ -31,6 +32,16 @@ namespace WPFInvestment
             {
                 this.DragMove();
             }
+        }
+
+        private void AddTransactionBTN_Click(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new TransactionPage();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new HomePage();
         }
     }
 }

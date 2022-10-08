@@ -54,3 +54,9 @@ D:\Development\IT\C#\Homeworks\WPFInvestment\bin\Debug\LiveCharts.pdb
 D:\Development\IT\C#\Homeworks\WPFInvestment\bin\Debug\LiveCharts.xml
 D:\Development\IT\C#\Homeworks\WPFInvestment\bin\Debug\LiveCharts.Wpf.pdb
 D:\Development\IT\C#\Homeworks\WPFInvestment\bin\Debug\LiveCharts.Wpf.xml
+D:\Development\IT\C#\Homeworks\WPFInvestment\obj\Debug\Pages\HomePage.g.cs
+D:\Development\IT\C#\Homeworks\WPFInvestment\obj\Debug\Pages\HomePage.baml
+D:\Development\IT\C#\Homeworks\WPFInvestment\obj\Debug\Pages\TransactionPage.g.cs
+D:\Development\IT\C#\Homeworks\WPFInvestment\obj\Debug\Pages\TransactionPage.baml
+D:\Development\IT\C#\Homeworks\WPFInvestment\obj\Debug\Pages\DeleteTransactionPage.g.cs
+D:\Development\IT\C#\Homeworks\WPFInvestment\obj\Debug\Pages\DeleteTransactionPage.baml
