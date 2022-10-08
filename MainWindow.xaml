@@ -43,13 +43,13 @@
                 <Separator Height="0.8" Margin="20 30" Background="#46658a" />
                 
                 <!--Menu Buttons-->
-                <Button Style="{StaticResource menuButtonActive}">
+                <Button x:Name="homePageBtn" Style="{StaticResource menuButton}" Click="homePageBtn_Click" >
                     <StackPanel Orientation="Horizontal">
                         <fa:IconImage Icon="Home" Style="{StaticResource menuButtonIcon}"/>
                         <TextBlock Text="Home Page" Style="{StaticResource menuButtonText}"/>
                     </StackPanel>
                 </Button>
-                <Button x:Name="addTransactionBTN" Style="{StaticResource menuButton}" Click="AddTransactionBTN_Click">
+                <Button x:Name="addTransactionBtn" Style="{StaticResource menuButton}" Click="AddTransactionBtn_Click">
                     <StackPanel Orientation="Horizontal">
                         <fa:IconImage Icon="Wallet" Style="{StaticResource menuButtonIcon}"/>
                         <TextBlock Text="Add Transaction" Style="{StaticResource menuButtonText}"/>
@@ -98,7 +98,7 @@
         <Frame Grid.Column="1" x:Name="Main" NavigationUIVisibility="Hidden">
             
         </Frame>
-        <!--<Border Grid.Column="1" CornerRadius="0 10 10 0" MouseDown="Border_MouseDown">
+        <Border Grid.Column="1" CornerRadius="0 10 10 0" MouseDown="Border_MouseDown">
             <Border.Background>
                 <LinearGradientBrush StartPoint="1,0" EndPoint="0,1">
                     <GradientStop Color="#41518f" Offset="0"/>
@@ -113,7 +113,7 @@
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
 
-                --><!--Top Menu--><!--
+                <!--Top Menu-->
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0 0 30 20">
                     <Button Content="Today" Style="{StaticResource topMenuButton}"/>
                     <Button Content="Week" Style="{StaticResource topMenuButton}" Background="#5b60c4" Foreground="#ffffff"/>
@@ -121,10 +121,10 @@
                     <Button Content="Year" Style="{StaticResource topMenuButton}"/>
                 </StackPanel>
 
-                --><!--Title--><!--
+                <!--Title-->
                 <TextBlock Text="Good afternoon, Ivan" FontSize="26" Foreground="#ccd7ff" HorizontalAlignment="Left" Margin="50 30 0 20"/>
 
-                --><!--Info Card--><!--
+                <!--Info Card-->
                 <Grid Grid.Row="1" Margin="50 20 15 40">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
@@ -145,7 +145,7 @@
                         <ColumnDefinition Width="300"/>
                     </Grid.ColumnDefinitions>
 
-                    --><!--Chart Section--><!--
+                    <!--Chart Section-->
                     <Border CornerRadius="20" Padding="35 25" Background="#243771" Margin="50 0 10 40">
                         <Grid>
                             <Grid.RowDefinitions>
@@ -184,7 +184,7 @@
                                 <TextBlock Text="12" Foreground="#717eb2" Margin="41 0 0 0"/>
                             </StackPanel>
 
-                            --><!--Chart--><!--
+                            <!--Chart-->
                             <lvc:CartesianChart Grid.Row="1" Margin ="45 0 0 25">
                                 <lvc:CartesianChart.Background>
                                     <LinearGradientBrush StartPoint="0.5, 0" EndPoint="0.5, 1">
@@ -228,7 +228,7 @@
                         </Grid>
                     </Border>
 
-                    --><!--Numbers section--><!--
+                    <!--Numbers section-->
                     <Border Grid.Column="1" CornerRadius="20" Padding="0 25" Background="#243771" Margin="15 0 47 40">
                         <Grid>
                             <Grid.RowDefinitions>
@@ -240,7 +240,7 @@
                                 <fa:IconImage Icon="Circle" Style="{StaticResource titleIcon}"/>
                                 <TextBlock Text="Profit" Style="{StaticResource titleText}"/>
                             </StackPanel>
-                            --><!--P&L--><!--
+                            <!--P&L-->
                             <StackPanel Grid.Row="1">
                                 <uc:Profit Title="BTC/USDT" Desc="+15.3%" Icon="Btc"/>
                                 <uc:Profit Title="ETC/USDT" Desc="+10.2%" Icon="Ethereum"/>
@@ -254,6 +254,6 @@
                 </Grid>
 
             </Grid>
-        </Border>-->
+        </Border>
     </Grid>
 </Window>

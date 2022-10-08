@@ -34,7 +34,7 @@ namespace WPFInvestment
             }
         }
 
-        private void AddTransactionBTN_Click(object sender, RoutedEventArgs e)
+        private void AddTransactionBtn_Click(object sender, RoutedEventArgs e)
         {
             Main.Content = new TransactionPage();
         }
@@ -42,6 +42,13 @@ namespace WPFInvestment
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Main.Content = new HomePage();
+
+        }
+
+        private void homePageBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new HomePage();
+            
         }
     }
 }

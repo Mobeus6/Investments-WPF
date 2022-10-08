@@ -43,7 +43,6 @@
                             </ControlTemplate>
                         </Setter.Value>
                     </Setter>
-
                 </Trigger>
             </Style.Triggers>
         </Style>
@@ -84,7 +83,6 @@
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
- 
         </Style>
 
         <Style x:Key="topMenuButton" TargetType="Button">
@@ -110,7 +108,6 @@
                 <Trigger Property="IsMouseOver" Value="True">
                     <Setter Property="Background" Value="#5b60c4"/>
                     <Setter Property="Foreground" Value="#ffffff"/>
-                    
                 </Trigger>
             </Style.Triggers>
         </Style>

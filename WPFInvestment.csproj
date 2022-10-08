@@ -104,6 +104,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Classes\IOModel.cs" />
     <Compile Include="Classes\Transaction.cs" />
     <Compile Include="Pages\DeleteTransactionPage.xaml.cs">
       <DependentUpon>DeleteTransactionPage.xaml</DependentUpon>
