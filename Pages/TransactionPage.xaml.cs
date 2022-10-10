@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WPFInvestment.Classes;
 
 namespace WPFInvestment.Pages
 {
@@ -23,6 +24,16 @@ namespace WPFInvestment.Pages
         public TransactionPage()
         {
             InitializeComponent();
+        }
+
+        private void addSellTransactionBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Transaction currentTransaction = new Transaction()
+        }
+
+        private void addBuyTransactionBtn_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

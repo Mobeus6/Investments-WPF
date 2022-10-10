@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,6 +17,7 @@ using WPFInvestment.Pages;
 
 namespace WPFInvestment
 {
+  
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
@@ -24,7 +26,10 @@ namespace WPFInvestment
         public MainWindow()
         {
             InitializeComponent();
+            MainFrame.Content = new HomePage();
+           
         }
+        
 
         public void Border_MouseDown(object sender, MouseButtonEventArgs e)
         {
@@ -36,18 +41,18 @@ namespace WPFInvestment
 
         private void AddTransactionBtn_Click(object sender, RoutedEventArgs e)
         {
-            Main.Content = new TransactionPage();
+            MainFrame.Content = new TransactionPage();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Main.Content = new HomePage();
+            MainFrame.Content = new HomePage();
 
         }
 
         private void homePageBtn_Click(object sender, RoutedEventArgs e)
         {
-            Main.Content = new HomePage();
+            MainFrame.Content = new HomePage();
             
         }
     }
