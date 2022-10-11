@@ -60,3 +60,5 @@ D:\Development\IT\C#\Homeworks\WPFInvestment\obj\Debug\Pages\TransactionPage.g.c
 D:\Development\IT\C#\Homeworks\WPFInvestment\obj\Debug\Pages\TransactionPage.baml
 D:\Development\IT\C#\Homeworks\WPFInvestment\obj\Debug\Pages\DeleteTransactionPage.g.cs
 D:\Development\IT\C#\Homeworks\WPFInvestment\obj\Debug\Pages\DeleteTransactionPage.baml
+D:\Development\IT\C#\Homeworks\WPFInvestment\bin\Debug\Newtonsoft.Json.dll
+D:\Development\IT\C#\Homeworks\WPFInvestment\bin\Debug\Newtonsoft.Json.xml

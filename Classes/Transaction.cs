@@ -9,28 +9,28 @@ namespace WPFInvestment.Classes
     internal class Transaction
     {
 
-        private int ID
+        public int ID
         {
             get { return ID; }
             set { ID = value; } 
         }
 
-        private DateTime date
+        public DateTime date
         {
             get { return date; }
             set { date = value; }
         }
-        private string pair
+        public string pair
         {
             get { return pair; }
             set { pair = value; }
         }
-        private int volume
+        public float volume
         {
             get { return volume; }
             set { volume = value; }
         }
-        private float price
+        public float price
         {
             get { return price; }
             set { price = value; }
@@ -38,7 +38,7 @@ namespace WPFInvestment.Classes
 
 
 
-        public Transaction(int ID, DateTime date, string pair, int volume, float price)
+        public Transaction(int ID, DateTime date, string pair,float volume, float price)
         {
             this.ID = ID;
             this.date = date;
