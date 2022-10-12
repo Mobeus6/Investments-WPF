@@ -10,31 +10,16 @@ namespace WPFInvestment.Classes
     {
 
         public int ID
-        {
-            get { return ID; }
-            set { ID = value; } 
-        }
+        { get; set; }
 
-        public DateTime date
-        {
-            get { return date; }
-            set { date = value; }
-        }
+        public DateTime date 
+        { get; set; }  
         public string pair
-        {
-            get { return pair; }
-            set { pair = value; }
-        }
+        { get; set; }
         public float volume
-        {
-            get { return volume; }
-            set { volume = value; }
-        }
+        { get; set; }
         public float price
-        {
-            get { return price; }
-            set { price = value; }
-        }
+        { get; set; }
 
 
 

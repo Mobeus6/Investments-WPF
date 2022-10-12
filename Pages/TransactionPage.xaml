@@ -67,12 +67,12 @@
                         </StackPanel>
                     </Border>
                     <Button x:Name ="addSellTransactionBtn" Content="Add Transaction" Style="{StaticResource topMenuButton}" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0 0 0 20" Height="50" Width="250" FontSize="30" Grid.Column="1" Grid.Row="2" Click="addSellTransactionBtn_Click"/>
-                    
+
                 </Grid>
 
 
             </Grid>
         </Border>
-        <TextBox x:Name="infoBox" BorderBrush="#ccd7ff" Margin ="0 0 0 10" Background="#2c386c" FontSize="12" HorizontalAlignment="Center"  TextWrapping="Wrap"  VerticalAlignment="Bottom" Width="200" Height="70"/>
+        <!--<TextBox x:Name="infoBox" Text="Please enter numbers in Token Quantity" BorderBrush="#ccd7ff" Margin ="0,660,0,0" Background="#2c386c" FontSize="20" HorizontalAlignment="Center"  TextWrapping="Wrap"  VerticalAlignment="Top" Width="245" Height="70"/>-->
     </Grid>
 </Page>
