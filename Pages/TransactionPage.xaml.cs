@@ -22,20 +22,21 @@ namespace WPFInvestment.Pages
             InitializeComponent();
         }
 
-        private void addSellTransactionBtn_Click(object sender, RoutedEventArgs e)
+        private void AddSellTransactionBtn_Click(object sender, RoutedEventArgs e)
         {
 
          
         }
 
-        private void addBuyTransactionBtn_Click(object sender, RoutedEventArgs e)
+        private void AddBuyTransactionBtn_Click(object sender, RoutedEventArgs e)
         {
             IOservice = new IOModel(Path);
+            transactions = new BindingList<Transaction>();
+            //transactions =  IOservice.LoadData();
             try {
                 float.TryParse(tokenQuantity.Text, out float tbVolume);
                 float.TryParse(tokenPrice.Text, out float tbPrice);
                 DateTime.TryParse(dateOfTransaction.Text, out DateTime tbDate);
-                IOservice.LoadData();
                 int Id = 0;
                 //try
                 //{
@@ -47,10 +48,9 @@ namespace WPFInvestment.Pages
                 //        }
                 //    }
                 //}
-                //catch
+                //catch (Exception ex)
                 //{
-                //    string nul = "nul";
-                //    transactions.Add(new Transaction(0, DateTime.Now, nul, 0, 0));
+                //    MessageBox.Show($"{ex}");
                 //}
                 Transaction currentTransaction = new Transaction(Id, tbDate, tokenName.Text, tbVolume, tbPrice);
                 transactions.Add(currentTransaction);
