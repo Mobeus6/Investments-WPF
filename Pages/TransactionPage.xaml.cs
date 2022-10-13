@@ -24,39 +24,72 @@ namespace WPFInvestment.Pages
 
         private void AddSellTransactionBtn_Click(object sender, RoutedEventArgs e)
         {
+            IOservice = new IOModel(Path); //initializing new IO model
 
-         
+            transactions = new BindingList<Transaction>(); //initializing new list for transactions
+
+            transactions = IOservice.LoadData(); //loading all data from JSON file to new list for ID
+            Transaction currentTransactionS = new Transaction();
+            try { float.TryParse(tokenQuantity.Text, out float stbVolume); currentTransactionS.volume = stbVolume; }
+            catch { TokenQuantityEx.Text = "Please enter numbers here"; }
+            try { float.TryParse(tokenPrice.Text, out float stbPrice); currentTransactionS.price = stbPrice; }
+            catch { PriceEx.Text = "Please enter numbers here"; }
+            try { DateTime.TryParse(dateOfTransaction.Text, out DateTime stbDate); currentTransactionS.date = stbDate; }
+            catch { DateParsingEx.Text = "Please enter data in format dd/mm/yyyy"; }
+            currentTransactionS.pair = tokenName.Text;
+            try
+            {
+                int Id = 0;
+                foreach (Transaction transaction in transactions)
+                {
+                    if (transaction.ID > Id)
+                    {
+                        Id = transaction.ID;
+                    }
+                    Id++;
+                }
+                currentTransactionS.ID = Id;
+                transactions.Add(currentTransactionS);
+                IOservice.SaveData(transactions);
+                InputDone.Text = "Successfully added";
+            }
+            catch (Exception ex) { MessageBox.Show($"{ex}"); }
+
         }
 
         private void AddBuyTransactionBtn_Click(object sender, RoutedEventArgs e)
         {
-            IOservice = new IOModel(Path);
-            transactions = new BindingList<Transaction>();
-            //transactions =  IOservice.LoadData();
-            try {
-                float.TryParse(tokenQuantity.Text, out float tbVolume);
-                float.TryParse(tokenPrice.Text, out float tbPrice);
-                DateTime.TryParse(dateOfTransaction.Text, out DateTime tbDate);
+            IOservice = new IOModel(Path); //initializing new IO model
+
+            transactions = new BindingList<Transaction>(); //initializing new list for transactions
+
+            transactions = IOservice.LoadData(); //loading all data from JSON file to new list for ID
+            Transaction currentTransaction = new Transaction();
+            try { float.TryParse(tokenQuantity.Text, out float tbVolume); currentTransaction.volume = tbVolume; }
+            catch { TokenQuantityEx.Text = "Please enter numbers here"; }
+            try { float.TryParse(tokenPrice.Text, out float tbPrice); currentTransaction.price = tbPrice; }
+            catch { PriceEx.Text = "Please enter numbers here"; }
+            try { DateTime.TryParse(dateOfTransaction.Text, out DateTime tbDate); currentTransaction.date = tbDate; }
+            catch { DateParsingEx.Text = "Please enter data in format dd/mm/yyyy"; } 
+            currentTransaction.pair = tokenName.Text; 
+            try
+            {
                 int Id = 0;
-                //try
-                //{
-                //    foreach (Transaction transaction in transactions)
-                //    {
-                //        if (transaction.ID > Id)
-                //        {
-                //            Id = transaction.ID;
-                //        }
-                //    }
-                //}
-                //catch (Exception ex)
-                //{
-                //    MessageBox.Show($"{ex}");
-                //}
-                Transaction currentTransaction = new Transaction(Id, tbDate, tokenName.Text, tbVolume, tbPrice);
+              foreach (Transaction transaction in transactions)
+              {
+                 if (transaction.ID > Id)
+                 {
+                   Id = transaction.ID;
+                 }
+                    Id++;
+              }
+                currentTransaction.ID = Id;
                 transactions.Add(currentTransaction);
                 IOservice.SaveData(transactions);
+                InputDone.Text = "Successfully added";
             }
-            catch { MessageBox.Show("Please enter numbers in Token Quantity"); }
+            catch (Exception ex){ MessageBox.Show($"{ex}"); }
+             
         }
     }
 }

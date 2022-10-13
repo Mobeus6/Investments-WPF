@@ -31,6 +31,7 @@ namespace WPFInvestment.Classes
             this.volume = volume;
             this.price = price;
         }
+        public Transaction() { }
 
     }
 }
