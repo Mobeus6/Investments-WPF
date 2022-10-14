@@ -8,10 +8,8 @@ namespace WPFInvestment.Classes
 {
     internal class Transaction
     {
-
         public int ID
         { get; set; }
-
         public DateTime date 
         { get; set; }  
         public string pair
@@ -20,8 +18,8 @@ namespace WPFInvestment.Classes
         { get; set; }
         public float price
         { get; set; }
-
-
+        public string transactionType
+        { get; set; }
 
         public Transaction(int ID, DateTime date, string pair,float volume, float price)
         {
@@ -30,8 +28,10 @@ namespace WPFInvestment.Classes
             this.pair = pair;
             this.volume = volume;
             this.price = price;
+            this.transactionType = transactionType;
         }
-        public Transaction() { }
+
+        public Transaction() { } //overload of constructor to initialize empty object
 
     }
 }

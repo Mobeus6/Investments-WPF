@@ -43,7 +43,7 @@
                 <Separator Height="0.8" Margin="20 30" Background="#46658a" />
                 
                 <!--Menu Buttons-->
-                <Button x:Name="homePageBtn" Style="{StaticResource menuButton}" Click="homePageBtn_Click" >
+                <Button x:Name="homePageBtn" Style="{StaticResource menuButton}" Click="HomePageBtn_Click" >
                     <StackPanel Orientation="Horizontal">
                         <fa:IconImage Icon="Home" Style="{StaticResource menuButtonIcon}"/>
                         <TextBlock Text="Home Page" Style="{StaticResource menuButtonText}"/>
@@ -55,40 +55,40 @@
                         <TextBlock Text="Add Transaction" Style="{StaticResource menuButtonText}"/>
                     </StackPanel>
                 </Button>
-                <Button Style="{StaticResource menuButton}">
+                <Button x:Name="transactionListbtn" Style="{StaticResource menuButton}" Click="TransactionListbtn_Click">
                     <StackPanel Orientation="Horizontal">
-                        <fa:IconImage Icon="Remove" Style="{StaticResource menuButtonIcon}"/>
-                        <TextBlock Text="Delete Transaction" Style="{StaticResource menuButtonText}"/>
+                        <fa:IconImage Icon="List" Style="{StaticResource menuButtonIcon}"/>
+                        <TextBlock Text="Transactions List" Style="{StaticResource menuButtonText}"/>
                     </StackPanel>
                 </Button>
-                <Button Style="{StaticResource menuButton}">
+                <Button x:Name="ReportBtn" Style="{StaticResource menuButton}" Click="ReportBtn_Click">
                     <StackPanel Orientation="Horizontal">
                         <fa:IconImage Icon="ChartArea" Style="{StaticResource menuButtonIcon}"/>
-                        <TextBlock Text="Investment" Style="{StaticResource menuButtonText}"/>
+                        <TextBlock Text="Detailed Report" Style="{StaticResource menuButtonText}"/>
                     </StackPanel>
                 </Button>
-                <Button Style="{StaticResource menuButton}">
+                <Button x:Name="expensesBtn" Style="{StaticResource menuButton}" Click="ExpensesBtn_Click">
                     <StackPanel Orientation="Horizontal">
                         <fa:IconImage Icon="MoneyBill1" Style="{StaticResource menuButtonIcon}"/>
                         <TextBlock Text="Expenses" Style="{StaticResource menuButtonText}"/>
                     </StackPanel>
                 </Button>
-                <Button Style="{StaticResource menuButton}">
+                <Button x:Name="capitalStatementBtn" Style="{StaticResource menuButton}" Click="CapitalStatementBtn_Click">
                     <StackPanel Orientation="Horizontal">
                         <fa:IconImage Icon="Bank" Style="{StaticResource menuButtonIcon}"/>
                         <TextBlock Text="Capital Statement" Style="{StaticResource menuButtonText}"/>
                     </StackPanel>
                 </Button>
-                <Button Style="{StaticResource menuButton}">
+                <Button x:Name="settingsBtn" Style="{StaticResource menuButton}" Click="SettingsBtn_Click">
                     <StackPanel Orientation="Horizontal">
                         <fa:IconImage Icon="Gear" Style="{StaticResource menuButtonIcon}"/>
                         <TextBlock Text="Settings" Style="{StaticResource menuButtonText}"/>
                     </StackPanel>
                 </Button>
-                <Button Style="{StaticResource menuButton}">
+                <Button x:Name ="Exit" Style="{StaticResource menuButton}" Click="Exit_Click">
                     <StackPanel Orientation="Horizontal">
                         <fa:IconImage Icon="PowerOff" Style="{StaticResource menuButtonIcon}"/>
-                        <TextBlock Text="Logout" Style="{StaticResource menuButtonText}"/>
+                        <TextBlock Text="Exit" Style="{StaticResource menuButtonText}"/>
                     </StackPanel>
                 </Button>
             </StackPanel>

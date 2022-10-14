@@ -20,6 +20,10 @@ namespace WPFInvestment.Classes
             Path = path;
         }
 
+        /// <summary>
+        /// Loading data from JSON file to transaction list
+        /// </summary>
+        /// <returns></returns>
         public BindingList<Transaction> LoadData()
         {
             var fileExsist = File.Exists(Path);
@@ -36,6 +40,10 @@ namespace WPFInvestment.Classes
             
         }
 
+        /// <summary>
+        /// Saving data from transaction list to JSON file
+        /// </summary>
+        /// <param name="transactionList"></param>
         public void SaveData(BindingList<Transaction> transactionList) 
         {
             using (StreamWriter writer = File.CreateText(Path))

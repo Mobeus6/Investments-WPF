@@ -62,3 +62,11 @@ D:\Development\IT\C#\Homeworks\WPFInvestment\obj\Debug\Pages\DeleteTransactionPa
 D:\Development\IT\C#\Homeworks\WPFInvestment\obj\Debug\Pages\DeleteTransactionPage.baml
 D:\Development\IT\C#\Homeworks\WPFInvestment\bin\Debug\Newtonsoft.Json.dll
 D:\Development\IT\C#\Homeworks\WPFInvestment\bin\Debug\Newtonsoft.Json.xml
+D:\Development\IT\C#\Homeworks\WPFInvestment\obj\Debug\Pages\CapStatementPage.g.cs
+D:\Development\IT\C#\Homeworks\WPFInvestment\obj\Debug\Pages\ExpensesPage.g.cs
+D:\Development\IT\C#\Homeworks\WPFInvestment\obj\Debug\Pages\ReportPage.g.cs
+D:\Development\IT\C#\Homeworks\WPFInvestment\obj\Debug\Pages\SettingsPage.g.cs
+D:\Development\IT\C#\Homeworks\WPFInvestment\obj\Debug\Pages\CapStatementPage.baml
+D:\Development\IT\C#\Homeworks\WPFInvestment\obj\Debug\Pages\ExpensesPage.baml
+D:\Development\IT\C#\Homeworks\WPFInvestment\obj\Debug\Pages\ReportPage.baml
+D:\Development\IT\C#\Homeworks\WPFInvestment\obj\Debug\Pages\SettingsPage.baml
